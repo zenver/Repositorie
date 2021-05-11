@@ -40,6 +40,9 @@ public abstract class Arabian {
         System.out.println(op1 - op2);
     }
     private static void Division (int op1, int op2) {
+        if (op1 % op2 != 0 || op1 < op2)
+            System.out.println("Дроби недопустимы!");
+        else
         System.out.println(op1 / op2);
     }
 }
