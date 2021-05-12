@@ -79,7 +79,7 @@ public class RomeNumber {
 
 
     private static void Division(String ro1, String ro2) throws Exception {
-        if (romanNumeralsMap.get(ro1) % romanNumeralsMap.get(ro2) != 0 || romanNumeralsMap.get(ro1) < romanNumeralsMap.get(ro2)) {
+        if (romanNumeralsMap.get(ro1) < romanNumeralsMap.get(ro2)) {
             throw new Exception("В римских цифрах нет дробей.");
         }
             else {
